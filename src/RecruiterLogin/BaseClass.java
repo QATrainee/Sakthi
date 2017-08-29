@@ -98,7 +98,7 @@ public class BaseClass {
 
 	public static void browserClose() {
 		d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		d.quit();
+		d.close();
 	}
 
 }
