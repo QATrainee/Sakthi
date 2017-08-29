@@ -16,7 +16,7 @@ public class calling {
 
 	}
 
-	/*@Test
+	@Test
 	public void g() throws Exception {
 		implement.dashBoard();
 		implement.post();
@@ -24,7 +24,7 @@ public class calling {
 		implement.fetchResume();
 		implement.jobs();
 		implement.myAccount();
-	}*/
+	}
 
 	@AfterTest
 	public void h() throws Exception {
