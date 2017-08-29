@@ -5,6 +5,7 @@
     <classes>
       <class name="RecruiterLogin.calling">
         <methods>
+          <include name="h"/>
           <include name="f"/>
           <include name="g"/>
         </methods>

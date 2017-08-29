@@ -1,36 +1,36 @@
 package RecruiterLogin;
 
-
 import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+public class calling {
 
-public class calling {	
-
-		BaseClass i=new BaseClass();
-		implement ii=new implement();
 	
+
 	@BeforeTest
 	public void f() throws Exception {
-	i.browserOpen();	
-	 i.logIn();
-	   	   
+		BaseClass.browserOpen();
+		BaseClass.logIn();
+
 	}
+
 	@Test
 	public void g() throws Exception {
-	   ii.DashBoard();
-	ii.postjob();
-		ii.Jobresponse();
-		ii.fetchresume();
-		ii.Jobs();
-		ii.myaccount();
-}
+		implement.dashBoard();
+		implement.post();
+		implement.jobResponse();
+		implement.fetchResume();
+		implement.jobs();
+		implement.myAccount();
+	}
+
 	@AfterTest
 	public void h() throws Exception {
 
-	i.logOut();
-	i.browserClose();
+		BaseClass.logOut();
+		BaseClass.browserClose();
 
 	}
 }
